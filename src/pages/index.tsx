@@ -7,7 +7,7 @@ import Landing from "./Landing";
 export default function index() {
   return (
     <chakra.main>
-      <NavBar />
+      {/* <NavBar /> */}
       <Landing />
       <Footer />
     </chakra.main>

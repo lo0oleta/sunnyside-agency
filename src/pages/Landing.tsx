@@ -10,34 +10,240 @@ import {
   useColorModeValue,
   createIcon,
   Flex,
+  StackDivider,
+  VStack,
+  HStack,
+  Divider,
+  Center,
 } from "@chakra-ui/react";
+import NavBar from "@/component/NavBar";
+
+const firstImage = "./images/desktop/image-header.jpg";
+const standout = "./images/desktop/image-stand-out.jpg";
+const photography = "./images/desktop/image-photography.jpg";
+const sugarcubes = "./images/desktop/image-gallery-sugarcubes.jpg";
+const orange = "./images/desktop/image-gallery-orange.jpg";
+const milkbottles = "./images/desktop/image-gallery-milkbottles.jpg";
+const graphic = "./images/desktop/image-graphic-design.jpg";
+const transform = "./images/desktop/image-transform.jpg";
 
 export default function Landing() {
   return (
     <>
-      <Container maxW={"3xl"}>
-        <Stack
-          as={Box}
-          textAlign={"center"}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}
+      {/* <Container maxW={"7xl"}> */}
+
+      <Flex direction="column">
+        <Box
+          w="100%"
+          h="100vh"
+          // mb={4}
+          bgImage={firstImage}
+          bgSize="cover"
+          bgAttachment="semi-fixed"
+          bgPos="50% 100%"
+          pos="relative"
+          bgRepeat="no-repeat"
         >
-          <Flex direction="column">
-            <Box p={4} mb={4} backgroundColor="red.200">
-              Box 1
+          <NavBar />
+        </Box>
+
+        <VStack
+          // divider={<StackDivider borderColor="gray.200" />}
+          align="stretch"
+        >
+          <HStack>
+            <Box
+              w="50%"
+              h="100vh"
+              // bgImage={firstImage}
+              // bgSize="cover"
+              // bgAttachment="semi-fixed"
+              // bgPos="50% 100%"
+              // pos="relative"
+              // bgRepeat="no-repeat"
+              justifyContent={"center"}
+              alignItems="center"
+            >
+              <Text
+                fontSize="6xl"
+                mt={"20vh"}
+                marginInline={"20vh"}
+                fontWeight="bold"
+              >
+                Tranform your brand
+              </Text>
+              <Text
+                fontSize="1xl"
+                fontWeight="bold"
+                mt={"5vh"}
+                marginInline={"20vh"}
+              >
+                We are a full-service creative agency specializing in helping{" "}
+                <Divider /> brands grow fast. Engage your clients through
+                compelling <Divider /> visuals that do most of the marketing for
+                you.
+              </Text>
+              <Button
+                fontSize="2xl"
+                mt={5}
+                marginInline={"20vh"}
+                fontWeight="bold"
+              >
+                Learn More
+              </Button>
             </Box>
-            <Box p={4} mb={4} backgroundColor="green.200">
-              Box 2
+            <Box
+              w="50%"
+              h="100vh"
+              bgImage={transform}
+              bgSize="cover"
+              bgAttachment="semi-fixed"
+              bgPos="50% 100%"
+              pos="relative"
+              bgRepeat="no-repeat"
+            ></Box>
+          </HStack>
+
+          <HStack>
+            <Box
+              w="50%"
+              h="100vh"
+              bgImage={standout}
+              bgSize="cover"
+              bgAttachment="semi-fixed"
+              bgPos="50% 100%"
+              pos="relative"
+              bgRepeat="no-repeat"
+            ></Box>
+            <Box
+              w="50%"
+              h="100vh"
+              // bgImage={firstImage}
+              // bgSize="cover"
+              // bgAttachment="semi-fixed"
+              // bgPos="50% 100%"
+              // pos="relative"
+              // bgRepeat="no-repeat"
+              justifyContent={"center"}
+              alignItems="center"
+            >
+              <Text
+                fontSize="6xl"
+                mt={"20vh"}
+                marginInline={"20vh"}
+                fontWeight="bold"
+              >
+                Stand out to the right audience
+              </Text>
+              <Text
+                fontSize="1xl"
+                fontWeight="bold"
+                mt={"5vh"}
+                marginInline={"20vh"}
+              >
+                Using a collaborative formula of designers, researchers,{" "}
+                <Divider /> photographers, videographers, and copywriters, well
+                build and
+                <Divider /> extend your brand in digital places.
+              </Text>
+              <Button
+                fontSize="2xl"
+                marginInline={"20vh"}
+                mt={5}
+                fontWeight="bold"
+              >
+                Learn More
+              </Button>
             </Box>
-            <Box p={4} mb={4} backgroundColor="blue.200">
-              Box 3
+          </HStack>
+          <HStack>
+            <Box
+              w="50%"
+              h="100vh"
+              bgImage={graphic}
+              bgSize="cover"
+              bgAttachment="semi-fixed"
+              bgPos="50% 100%"
+              pos="relative"
+              justifyItems={"center"}
+              justifyContent="center"
+              bgRepeat="no-repeat"
+            >
+              <Text
+                fontSize="6xl"
+                mt={"60vh"}
+                marginInline={"20vh"}
+                fontWeight="bold"
+              >
+                Graphic design
+              </Text>
+              <Text
+                fontSize="1xl"
+                fontWeight="bold"
+                mt={"10vh"}
+                marginInline={"20vh"}
+              >
+                Great design makes you memorable. We deliver
+                <Divider /> artwork that underscores your brand message and
+                <Divider />
+                captures potential clients’ attention.
+              </Text>
             </Box>
-            <Box p={4} backgroundColor="yellow.200">
-              Box 4
+            <Box
+              w="50%"
+              h="100vh"
+              bgImage={photography}
+              bgSize="cover"
+              bgAttachment="semi-fixed"
+              bgPos="50% 100%"
+              pos="relative"
+              bgRepeat="no-repeat"
+              alignItems="center"
+            >
+              <Text
+                fontSize="6xl"
+                mt={"60vh"}
+                marginInline={"20vh"}
+                fontWeight="bold"
+              >
+                Photography
+              </Text>
+              <Text
+                fontSize="1xl"
+                fontWeight="bold"
+                mt={"10vh"}
+                marginInline={"20vh"}
+              >
+                Increase your credibility by getting the most
+                <Divider /> stunning, high-quality photos that improve your
+                <Divider />
+                business
+              </Text>
             </Box>
-          </Flex>
-        </Stack>
-      </Container>
+          </HStack>
+        </VStack>
+
+        <Box
+          w="100%"
+          h="60vh"
+          bgSize="cover"
+          bgAttachment="semi-fixed"
+          bgPos="50% 100%"
+          pos="relative"
+          bgRepeat="no-repeat"
+          justifyContent="center"
+        >
+          <Center
+            fontSize="6xl"
+            marginInline={"20vh"}
+            color={"gray.200"}
+            fontWeight="bold"
+          >
+            CLIENT TESTIMONIALS
+          </Center>
+        </Box>
+      </Flex>
+      {/* </Container> */}
     </>
   );
 }
