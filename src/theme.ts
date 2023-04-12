@@ -1,12 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const fonts = {
-  fonts: {
-    heading: `'Barlow', sans-serif`,
-    body: `'Barlow', sans-serif`,
-  },
-};
- 
+// const fonts = {
+//   body: `'var(--font-barlow)', sans-serif`,
+//   heading: `'var(--font-fraunces)', sans-serif`,
+// };
 
 const breakpoints = {
   sm: "40em",
@@ -16,6 +13,21 @@ const breakpoints = {
 };
 
 const theme = extendTheme({
+  config: {
+    cssVarPrefix: "ck",
+  },
+  fonts: {
+    body: "system-ui, sans-serif",
+    // heading: "Georgia, serif",
+    // barlow: "Georgia, serif",
+
+    barlow: "var(--font-barlow)",
+    // body: "var(--font-barlow)",
+    heading: "var(--font-fraunces), sans-serif",
+    mono: "Menlo, monospace",
+  },
+  // fonts,
+
   styles: {
     global: () => ({
       "html, body, #__next": {
@@ -38,6 +50,15 @@ const theme = extendTheme({
         "800": "#59400D",
         "900": "#2C2007",
       },
+      brandSoftRed: "hsl(7, 99%, 70%)",
+      brandYellow: "hsl(51, 100%, 49%)",
+      brandCyan: "hsl(167, 40%, 24%)",
+      darkBlue: "hsl(198, 62%, 26%)",
+      footerCyan: "hsl(168, 34%, 41%)",
+      desaturatedBlue: "hsl(212, 27%, 19%)",
+      veryGrayishDarkBlue: "hsl(213, 9%, 39%)",
+      grayishDarkBlue: " hsl(232, 10%, 55%)",
+      grayishBlue: "hsl(210, 4%, 67%)",
       text: {
         default: "#16161D",
         _dark: "#ade3b8",
@@ -56,7 +77,6 @@ const theme = extendTheme({
       button: "12px",
     },
   },
-  fonts,
   breakpoints,
 });
 

@@ -10,10 +10,8 @@ import {
   useColorModeValue,
   createIcon,
   Flex,
-  StackDivider,
   VStack,
   HStack,
-  Divider,
   Center,
 } from "@chakra-ui/react";
 import NavBar from "@/component/NavBar";
@@ -47,10 +45,7 @@ export default function Landing() {
           <NavBar />
         </Box>
 
-        <VStack
-          // divider={<StackDivider borderColor="gray.200" />}
-          align="stretch"
-        >
+        <VStack align="stretch">
           <HStack>
             <Box
               w="50%"
@@ -70,18 +65,18 @@ export default function Landing() {
                 marginInline={"20vh"}
                 fontWeight="bold"
               >
-                Tranform your brand
+                Trasform your brand
               </Text>
               <Text
                 fontSize="1xl"
                 fontWeight="bold"
                 mt={"5vh"}
                 marginInline={"20vh"}
+                noOfLines={3}
               >
                 We are a full-service creative agency specializing in helping{" "}
-                <Divider /> brands grow fast. Engage your clients through
-                compelling <Divider /> visuals that do most of the marketing for
-                you.
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
               </Text>
               <Button
                 fontSize="2xl"
@@ -140,11 +135,11 @@ export default function Landing() {
                 fontWeight="bold"
                 mt={"5vh"}
                 marginInline={"20vh"}
+                noOfLines={3}
               >
                 Using a collaborative formula of designers, researchers,{" "}
-                <Divider /> photographers, videographers, and copywriters, well
-                build and
-                <Divider /> extend your brand in digital places.
+                photographers, videographers, and copywriters, well build and
+                extend your brand in digital places.
               </Text>
               <Button
                 fontSize="2xl"
@@ -182,11 +177,11 @@ export default function Landing() {
                 fontWeight="bold"
                 mt={"10vh"}
                 marginInline={"20vh"}
+                noOfLines={3}
               >
-                Great design makes you memorable. We deliver
-                <Divider /> artwork that underscores your brand message and
-                <Divider />
-                captures potential clients’ attention.
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
               </Text>
             </Box>
             <Box
@@ -203,6 +198,7 @@ export default function Landing() {
               <Text
                 fontSize="6xl"
                 mt={"60vh"}
+                fontFamily={"var(--font-barlow)"}
                 marginInline={"20vh"}
                 fontWeight="bold"
               >
@@ -210,14 +206,12 @@ export default function Landing() {
               </Text>
               <Text
                 fontSize="1xl"
-                fontWeight="bold"
+                fontFamily={"var(--font-barlow)"}
                 mt={"10vh"}
                 marginInline={"20vh"}
               >
-                Increase your credibility by getting the most
-                <Divider /> stunning, high-quality photos that improve your
-                <Divider />
-                business
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business
               </Text>
             </Box>
           </HStack>
@@ -236,7 +230,7 @@ export default function Landing() {
           <Center
             fontSize="6xl"
             marginInline={"20vh"}
-            color={"gray.200"}
+            color={"grayishBlue"}
             fontWeight="bold"
           >
             CLIENT TESTIMONIALS
