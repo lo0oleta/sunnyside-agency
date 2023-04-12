@@ -86,7 +86,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 # KT Track 3
 
 This is a layout and grid focused task, the goal is to be able to build layouts (columns and rows)
-<img width="1696" alt="image" src="https://user-images.githubusercontent.com/8960757/230594630-42c220e3-ec5e-4121-9bde-044d8f23b701.png">
 
 ## Runinng the Project
 
