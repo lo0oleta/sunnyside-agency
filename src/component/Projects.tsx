@@ -12,14 +12,9 @@ import {
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
 
-const firstImage = "./images/desktop/image-header.jpg";
-const standout = "./images/desktop/image-stand-out.jpg";
-const photography = "./images/desktop/image-photography.jpg";
 const sugarcubes = "./images/desktop/image-gallery-sugarcubes.jpg";
 const orange = "./images/desktop/image-gallery-orange.jpg";
 const milkbottles = "./images/desktop/image-gallery-milkbottles.jpg";
-const graphic = "./images/desktop/image-graphic-design.jpg";
-const transform = "./images/desktop/image-transform.jpg";
 const cone = "./images/desktop/image-gallery-cone.jpg";
 
 export default function gridListWithCTA() {
