@@ -10,13 +10,10 @@ import Projects from "@/component/Projects";
 export default function Index() {
   return (
     <chakra.main>
-      {/* <NavBar /> */}
       <Landing />
       <About />
       <Testimonials />
       <Projects />
-      <Footer/>
-
     </chakra.main>
   );
 }
