@@ -56,8 +56,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-        <Logo />
-
+          <Logo />
         </Flex>
 
         <Stack
@@ -95,7 +94,7 @@ export default function WithSubnavigation() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("white.600", "white.200");
-  const linkHoverColor = useColorModeValue("white.800", "white");
+  const linkHoverColor = useColorModeValue("blue.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "white.800");
 
   return (
@@ -180,7 +179,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("rgba(66, 153, 225, 0.6)", "white.800")}
       p={4}
       display={{ md: "none" }}
     >
@@ -253,14 +252,14 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "About",
-    href: "#",
+    href: "#About",
   },
   {
     label: "Services",
-    href: "#",
+    href: "#Services",
   },
   {
     label: "Projects",
-    href: "#",
+    href: "#Projects",
   },
 ];
