@@ -11,6 +11,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
+import Footer from "./Footer";
 
 const sugarcubes = "./images/desktop/image-gallery-sugarcubes.jpg";
 const orange = "./images/desktop/image-gallery-orange.jpg";
@@ -34,6 +35,7 @@ export default function gridListWithCTA() {
           <Image alt={"Login Image"} objectFit={"cover"} src={cone} />{" "}
           <Image alt={"Login Image"} objectFit={"cover"} src={sugarcubes} />
         </Grid>
+        <Footer />
       </Box>
     </>
   );

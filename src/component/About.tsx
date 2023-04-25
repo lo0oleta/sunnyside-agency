@@ -116,67 +116,63 @@ export default function About() {
         </Flex>
       </Stack>
       <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-        <HStack>
-          <Box
-            w="50%"
-            h="100vh"
-            bgImage={graphic}
-            bgSize="cover"
-            bgAttachment="semi-fixed"
-            bgPos="50% 100%"
-            pos="relative"
-            bgRepeat="no-repeat"
-          >
-            <Text
-              fontSize="6xl"
-              mt={"60vh"}
+        <Flex
+          flex={1}
+          align={"center"}
+          justify={"center"}
+          bgImage={graphic}
+          bgRepeat="no-repeat"
+        >
+          <Stack w={"full"} maxW={"lg"}>
+            <Heading
+              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
               fontFamily={"var(--font-fraunces)"}
-              marginInline={"15vh"}
-              fontWeight="bold"
             >
-              Graphic design
-            </Text>
-
+              <br />{" "}
+              <Text color={"desaturatedBlue"} as={"span"} noOfLines={2}>
+                Graphic design
+              </Text>{" "}
+            </Heading>
             <Text
-              fontSize="1xl"
+              fontSize={{ base: "md", lg: "lg" }}
+              color={"gray.500"}
+              noOfLines={3}
               fontFamily={"var(--font-barlow)"}
-              marginInline={"20vh"}
             >
-              Using a collaborative formula of designers, researchers,{" "}
+              Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, well build and
               extend your brand in digital places.
             </Text>
-          </Box>
-          <Box
-            w="50%"
-            h="100vh"
-            bgImage={photography}
-            bgSize="cover"
-            bgAttachment="semi-fixed"
-            bgPos="50% 100%"
-            pos="relative"
-            bgRepeat="no-repeat"
-            alignItems="center"
-          >
-            <Text
-              fontSize="6xl"
-              mt={"60vh"}
+          </Stack>
+        </Flex>
+        <Flex
+          flex={1}
+          align={"center"}
+          justify={"center"}
+          bgRepeat="no-repeat"
+          bgImage={photography}
+        >
+          <Stack w={"full"} maxW={"lg"}>
+            <Heading
+              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
               fontFamily={"var(--font-fraunces)"}
-              marginInline={"20vh"}
-              fontWeight="bold"
             >
-              Photography
-            </Text>
+              <br />{" "}
+              <Text color={"desaturatedBlue"} as={"span"} noOfLines={2}>
+                Photography
+              </Text>{" "}
+            </Heading>
             <Text
-              fontSize="1xl"
+              fontSize={{ base: "md", lg: "lg" }}
+              color={"gray.500"}
+              noOfLines={3}
               fontFamily={"var(--font-barlow)"}
-              marginInline={"20vh"}
             >
               Increase your credibility by getting the most stunning,
               high-quality photos that improve your business
             </Text>
-          </Box>
-        </HStack>
+          </Stack>
+        </Flex>
       </Stack>
     </Container>
   );
